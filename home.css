@@ -1,0 +1,6 @@
+body {
+    background-color: black;
+    --primary-color: rgba(162, 155, 254);
+    --secondary-color : rgba(152,146,239,255);
+    --font :var(--font)
+}
