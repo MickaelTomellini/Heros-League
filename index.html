@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Header -->
-    <header class="header__home header__fixed">
-        <div class="header__logo">Heros League</div>
-        <nav class="header__nav">
-            <a href="#services">Services</a>
-            <a href="#heros">Nos Héros</a>
-            <a href="#temoignages">Témoignages</a>
-            <a href="#formulaire">Sauvez-moi !</a>
-        </nav>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">Heros League</div>
+            <nav class="header__nav">
+                <a href="#services">Services</a>
+                <a href="#heros">Nos Héros</a>
+                <a href="#temoignages">Témoignages</a>
+                <a href="#formulaire">Sauvez-moi !</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Banner -->
-    <section class="banner__home">
+    <section class="banner">
         <img class="banner__img" src="./ressources/images/hero-banner.png" alt="Bannière Heros League">
         <div class="banner__overlay">
             <h1 class="banner__title">Heros League</h1>
@@ -28,150 +31,126 @@
         </div>
     </section>
 
-    <main class="main__home">
+    <main class="main">
 
         <!-- Services -->
-        <section id="services" class="main__section-service">
-            <h2 class="main__section-service--title">Nos <span class="text-gradient">supers</span> Services</h2>
-            <div class="main__section-service--cards">
-
-                <article class="main__section-service--article">
+        <section id="services" class="section section--services">
+            <h2 class="section__title">Nos <span class="text-gradient">Supers</span> Services</h2>
+            <div class="cards">
+                <article class="card">
                     <h3>Super Déménagement</h3>
                     <p>Pour des déménagements sans effort et sans casse* !</p>
-                    <button class="main__section-service--article-button">À partir de 233 €</button>
-                    <aside class="main__section-service--article-aside">
-                        * Nous ne pouvons malheureusement pas garantir que vos objets fragiles ou votre chat Gribouille survivront à un combat épique entre super-vilains lors du trajet.
-                    </aside>
+                    <button>À partir de 233 €</button>
+                    <small>* Nous ne pouvons pas garantir que vos objets fragiles ou votre chat Gribouille survivront aux super-vilains.</small>
                 </article>
-
-                <article class="main__section-service--article">
+                <article class="card">
                     <h3>Livraison de Repas</h3>
                     <p>Pour des livraisons super-soniques*</p>
-                    <button class="main__section-service--article-button">À partir de 12 €</button>
-                    <aside class="main__section-service--article-aside">
-                        * Pour éviter tout dommage à votre porte, merci de la laisser ouverte, certains super-héros n'ont pas conscience de leur force. Vous pouvez souscrire à notre assurance Porte en vrac pour 5 € de plus.
-                    </aside>
+                    <button>À partir de 12 €</button>
+                    <small>* Laisser votre porte ouverte, certains héros sont un peu trop puissants.</small>
                 </article>
-
-                <article class="main__section-service--article">
+                <article class="card">
                     <h3>Z'héro Bouchons</h3>
                     <p>Pour les clients pressés !*</p>
-                    <button class="main__section-service--article-button">1,33 €/km</button>
-                    <aside class="main__section-service--article-aside">
-                        * Le mode de déplacement peut être différent en fonction de la disponibilité des héros. Merci de préciser à la commande si vous avez le mal des transports soniques.
-                    </aside>
+                    <button>1,33 €/km</button>
+                    <small>* Déplacement selon disponibilité des héros.</small>
                 </article>
-
-                <article class="main__section-service--article">
+                <article class="card">
                     <h3>Sauvetage de soirée</h3>
                     <p>Pour les soirées booooring !</p>
-                    <button class="main__section-service--article-button">À partir de 50 €/h</button>
-                    <aside class="main__section-service--article-aside">
-                        * Nous ne pouvons malheureusement pas garantir que votre super-héros ne se fera pas la malle si la soirée n'est pas sauvable.
-                    </aside>
+                    <button>À partir de 50 €/h</button>
+                    <small>* Le héros peut s’éclipser si la soirée n’est pas sauvable.</small>
                 </article>
-
-                <article class="main__section-service--article">
+                <article class="card">
                     <h3>Moral à Z'héro</h3>
-                    <p>Pour les jours gris et les cœurs lourds, des héros au moral d'acier.*</p>
-                    <button class="main__section-service--article-button">À partir de 100 €</button>
-                    <aside class="main__section-service--article-aside">
-                        * Il peut arriver que le moral de votre héros ne soit pas au beau fixe et vous bassine avec sa défaite de la veille, dans ce cas, nous vous remboursons 50 % de la prestation.
-                    </aside>
+                    <p>Des héros au moral d'acier pour les jours gris.*</p>
+                    <button>À partir de 100 €</button>
+                    <small>* Si le moral du héros est bas, remboursement 50 %.</small>
                 </article>
-
             </div>
         </section>
 
         <!-- Héros -->
-        <section id="heros" class="main__section-heros">
-            <h2 class="main__section-heros--title">
-                Nos <span class="text-gradient">Supers</span> Héros
-            </h2>
-            <div class="main__section-heros--cards">
-                <article class="main__section-heros--article">
-                    <img class="main__section-heros--article-img" src="./ressources/images/catastrophic.png" alt="Cat Astrophic">
-                    <h4 class="main__section-heros--article-name">Cat Astrophic</h4>
+        <section id="heros" class="section section--heros">
+            <h2 class="section__title">Nos <span class="text-gradient">Supers</span> Héros</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="./ressources/images/catastrophic.png" alt="Cat Astrophic">
+                    <h4>Cat Astrophic</h4>
                 </article>
-                <article class="main__section-heros--article">
-                    <img class="main__section-heros--article-img" src="./ressources/images/carotte-woman.png" alt="Carotte Woman">
-                    <h4 class="main__section-heros--article-name">Carotte Woman</h4>
+                <article class="card">
+                    <img src="./ressources/images/carotte-woman.png" alt="Carotte Woman">
+                    <h4>Carotte Woman</h4>
                 </article>
-                <article class="main__section-heros--article">
-                    <img class="main__section-heros--article-img" src="./ressources/images/ultraquenarde.png" alt="Ultraquenarde">
-                    <h4 class="main__section-heros--article-name">Ultraquenarde</h4>
+                <article class="card">
+                    <img src="./ressources/images/ultraquenarde.png" alt="Ultraquenarde">
+                    <h4>Ultraquenarde</h4>
                 </article>
-                <article class="main__section-heros--article">
-                    <img class="main__section-heros--article-img" src="./ressources/images/poulpy.png" alt="Poulpy">
-                    <h4 class="main__section-heros--article-name">Poulpy</h4>
+                <article class="card">
+                    <img src="./ressources/images/poulpy.png" alt="Poulpy">
+                    <h4>Poulpy</h4>
                 </article>
-                <article class="main__section-heros--article">
-                    <img class="main__section-heros--article-img" src="./ressources/images/oran-wu-tang-clan.png" alt="Orang Wu-Tang Clan">
-                    <h4 class="main__section-heros--article-name">Orang Wu-Tang Clan</h4>
+                <article class="card">
+                    <img src="./ressources/images/oran-wu-tang-clan.png" alt="Orang Wu-Tang Clan">
+                    <h4>Orang Wu-Tang Clan</h4>
                 </article>
-                <article class="main__section-heros--article">
-                    <img class="main__section-heros--article-img" src="./ressources/images/superime.png" alt="Superimé">
-                    <h4 class="main__section-heros--article-name">Superimé</h4>
+                <article class="card">
+                    <img src="./ressources/images/superime.png" alt="Superimé">
+                    <h4>Superimé</h4>
                 </article>
             </div>
-            <button class="main__section-heros--button">Tous nos héros</button>
+            <button class="btn-center">Tous nos héros</button>
         </section>
 
         <!-- Témoignages -->
-        <section id="temoignages" class="section__clients">
-            <h3 class="section__clients--title">Les Témoignages de nos clients</h3>
-            <div class="section__clients--cards">
-                <article class="section__clients--article">
-                    <img class="section__clients--img" src="./ressources/images/testimony-1.png" alt="">
-                    <h4 class="section__clients--name">Tombédeu O.</h4>
-                    <p class="section__clients--p">"Grâce à Heros League, j'ai pu déménager super rapidement. Attention à l'odeur laissée par les tentacules ceci-dit. Merci Poulpy !"</p>
+        <section id="temoignages" class="section section--testimonials">
+            <h2 class="section__title">Les Témoignages de nos clients</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="./ressources/images/testimony-1.png" alt="">
+                    <h4>Tombédeu O.</h4>
+                    <p>"Grâce à Heros League, j'ai pu déménager super rapidement. Merci Poulpy !"</p>
                 </article>
-                <article class="section__clients--article">
-                    <img class="section__clients--img" src="./ressources/images/testimony-4.png" alt="">
-                    <h4 class="section__clients--name">Coupéhala H.</h4>
-                    <p class="section__clients--p">"Supervif a été super, il m'a sortie des bouchons et amenée au travail en un temps record. Par contre j'aimerais bien retrouver ma voiture maintenant."</p>
+                <article class="card">
+                    <img src="./ressources/images/testimony-4.png" alt="">
+                    <h4>Coupéhala H.</h4>
+                    <p>"Supervif a été super, il m'a sortie des bouchons et amenée au travail en un temps record."</p>
                 </article>
-                <article class="section__clients--article">
-                    <img class="section__clients--img" src="./ressources/images/testimony-3.png" alt="">
-                    <h4 class="section__clients--name">Bob O.</h4>
-                    <p class="section__clients--p">"Je ne remercierai jamais assez Carotte Woman d'avoir retrouvé mon chat. Apparemment c'est normal si il est orange et plus noir, elle l'aurait retrouvé dans un produit chimique spécial. Je la crois sur parole !"</p>
+                <article class="card">
+                    <img src="./ressources/images/testimony-3.png" alt="">
+                    <h4>Bob O.</h4>
+                    <p>"Carotte Woman a retrouvé mon chat. Je la crois sur parole !"</p>
                 </article>
             </div>
         </section>
 
         <!-- Formulaire -->
-        <section id="formulaire" class="main__section--formulaire">
-            <h2 class="main__section--formulaire-title">Sauvez-moi !</h2>
-            <form action="#">
-                <fieldset class="section__formualire">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail" name="mail">
-
-                    <label for="service">Service</label>
-                    <select name="service" id="service">
-                        <option value="Super Déménagement">Super Déménagement</option>
-                        <option value="Livraison de Repas">Livraison de Repas</option>
-                        <option value="Z'héro Bouchons">Z'héro Bouchons</option>
-                        <option value="Sauvetage de soirée">Sauvetage de soirée</option>
-                        <option value="Moral à Z'héro">Moral à Z'héro</option>
-                    </select>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
-
-                    <button type="submit" class="form__button">Envoyer</button>
-                </fieldset>
+        <section id="formulaire" class="section section--form">
+            <h2 class="section__title">Sauvez-moi !</h2>
+            <form class="form">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" placeholder="Votre email">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                    <option value="Super Déménagement">Super Déménagement</option>
+                    <option value="Livraison de Repas">Livraison de Repas</option>
+                    <option value="Z'héro Bouchons">Z'héro Bouchons</option>
+                    <option value="Sauvetage de soirée">Sauvetage de soirée</option>
+                    <option value="Moral à Z'héro">Moral à Z'héro</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+                <button type="submit">Envoyer</button>
             </form>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="footer__home">
-        <h1 class="footer__home--title">Heros League</h1>
+    <footer class="footer">
+        <h2>Heros League</h2>
         <nav>
             <a href="#services">Services</a>
             <a href="#heros">Nos Héros</a>
@@ -180,5 +159,6 @@
         </nav>
         <p>© 2024 Heros League - Tous droits réservés</p>
     </footer>
+
 </body>
 </html>
