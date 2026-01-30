@@ -39,11 +39,6 @@ body {
   box-shadow: 0 2px 16px rgba(0,0,0,0.3);
 }
 
-.header__logo {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
 .header__nav a {
   color: #fff;
   text-decoration: none;
@@ -94,41 +89,49 @@ body {
   font-weight: 400;
 }
 
-/* Cards / Services / Heroes */
-.cards-container {
+/* Cards / Services */
+.main__section-service--cards,
+.main__section-heros--cards,
+.section__clients--cards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
 
-.card {
-  background: rgba(162,155,254,0.08);
-  border: 1px solid #a29bfe;
+/* Service Cards */
+.main__section-service--article {
+  background: #181825;
   border-radius: 1.5rem;
-  padding: 2rem;
-  width: 320px;
-  max-width: 95vw;
-  box-shadow: 0 2px 16px rgba(162,155,254,0.08);
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(162,155,254,0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card h3 {
-  font-size: 1.2rem;
+.main__section-service--article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(162,155,254,0.3);
+}
+
+.main__section-service--article h3 {
   font-weight: bold;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-.card p {
+.main__section-service--article p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: #dfe6e9;
 }
 
-.card button {
-  background: #a29bfe;
+.main__section-service--article-button {
+  background: linear-gradient(90deg,#a29bfe 60%,#6c5ce7 100%);
   color: #fff;
   border: none;
   border-radius: 1rem;
@@ -136,94 +139,99 @@ body {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(162,155,254,0.15);
-  transition: background 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card button:hover {
-  background: #6c5ce7;
+.main__section-service--article-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(162,155,254,0.35);
 }
 
-/* Section Héros améliorée */
-.main__section-heros {
-  padding: 4rem 2rem;
+.main__section-service--article-aside {
+  font-size: 0.8rem;
+  color: #b2bec3;
+  margin-top: 0.5rem;
 }
 
-.main__section-heros--title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.main__section-heros--cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-  margin-top: 2rem;
-}
-
-/* Section Héros : cartes */
+/* Heroes Cards */
 .main__section-heros--article {
-  background: linear-gradient(145deg, #1b1928, #14121f);
-  border-radius: 1.8rem;
+  background: #181825;
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(162,155,254,0.1);
+  box-shadow: 0 4px 20px rgba(162,155,254,0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .main__section-heros--article:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 12px 40px rgba(162,155,254,0.4);
-  background: linear-gradient(145deg, #2a243f, #1f1c30);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(162,155,254,0.3);
 }
 
 .main__section-heros--article-img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
-  border-top-left-radius: 1.8rem;
-  border-top-right-radius: 1.8rem;
-  transition: transform 0.35s ease;
-}
-
-.main__section-heros--article:hover .main__section-heros--article-img {
-  transform: scale(1.05);
 }
 
 .main__section-heros--article-name {
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin: 1rem 0 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
   color: #fff;
   text-align: center;
 }
 
-/* Bouton "Tous nos héros" */
 .main__section-heros--button {
   margin: 3rem auto 0 auto;
-  display: inline-block;
-  padding: 0.8rem 2.2rem;
-  font-weight: 700;
-  font-size: 1.05rem;
+  display: block;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
   color: #fff;
   background: linear-gradient(90deg,#a29bfe 60%,#6c5ce7 100%);
   border: none;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   cursor: pointer;
-  box-shadow: 0 6px 20px rgba(162,155,254,0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 4px 20px rgba(162,155,254,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .main__section-heros--button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(162,155,254,0.45);
-  filter: brightness(1.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(162,155,254,0.35);
 }
 
+/* Clients / Testimonials */
+.section__clients--article {
+  background: #181825;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 20px rgba(162,155,254,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section__clients--article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(162,155,254,0.3);
+}
+
+.section__clients--img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.section__clients--name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
 /* Footer */
 .footer__home {
@@ -242,18 +250,17 @@ body {
 /* Responsive */
 @media (max-width: 900px) {
   .banner__home { height: 400px; }
-  .cards-container { gap: 1rem; }
-  .card { width: 100%; max-width: 400px; }
-  .main__section-heros--cards {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
+  .main__section-service--cards,
+  .main__section-heros--cards,
+  .section__clients--cards { gap: 1rem; }
+  .main__section-service--article,
+  .main__section-heros--article,
+  .section__clients--article { width: 100%; max-width: 400px; }
 }
 
 @media (max-width: 600px) {
   .banner__home { height: 250px; border-radius: 1rem; }
   .banner__title { font-size: 2rem; }
-  .card { min-width: 180px; }
-  .main__section-heros--cards {
-    grid-template-columns: 1fr;
-  }
+  .main__section-service--article,
+  .main__section-heros--article { min-width: 180px; }
 }
